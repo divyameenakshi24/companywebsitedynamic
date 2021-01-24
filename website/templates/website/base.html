@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hexabyte Private Limited</title>
+    <link rel="stylesheet" href="{% static 'css/companywebsite.css' %}">
+    <link rel = "icon" href ="{% static '/img/hb.jpg' %}" type = "image/x-icon">
+              
+</head>
+
+<body>
+    <div class="container">
+    <div class="banner">
+       HEXABYTE PRIVATE LIMITED
+    </div>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div> 
+        <div class="menuitem"><a href="/products">Products</a></div> 
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contact">Contact Us</a></div> 
+    </div><div class="content">
+    {% block content %}    
+    {% endblock  %}
+    </div>
+    <div class="footer">
+        Copyright © 2021 Hexabyte Private Limited, Developed by Divya Meenakshi
+    </div>
+    </div>
+</body>
+
+</html>
